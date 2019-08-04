@@ -16,7 +16,9 @@ sim = 0;
 %
 %
 
-
+sqdiff = (x1 - x2).^2;
+scaled = sqdiff/(2*sigma^2);
+sim = exp(-sum(scaled));
 
 
 
